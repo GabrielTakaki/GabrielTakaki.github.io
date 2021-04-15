@@ -1,68 +1,147 @@
 body {
-    background-color: #000;
+    background-color: rgb(201, 201, 201);
     line-height: 30px;
     list-style-type: none;
     font-size: 18px;
     margin: 50px;
+}  
+
+  .container {
+      background-color: #8B8982;
 }
 
-.container {
-    background-color: #8B8982;
+  .navs {
+      background-color: #373F47;
+      padding: 1px;
+      height: 100px;
 }
 
-.navs {
-    background-color: #373F47;
-    padding: 1px;
-    height: 100px;
+  ul li {
+      list-style-type: none;
 }
 
-ul li {
-    list-style-type: none;
+  #brand {
+      text-decoration: none;
+      color: #fff;
+      position: absolute;
+      font-size: 40px;
+      padding: 5px 5px;
 }
 
-#brand {
-    text-decoration: none;
-    color: #fff;
+  .navbrand {
+      line-height: 20px;
+      display: flex;
+      flex-direction: column;
+      text-align: end;
+      font-size: 1.2rem;
+      color: #fff;
+      position: relative;
+      top: 35px;
+}
+
+header {
+    height: 400px;
+    box-shadow: 3px 10px 10px rgba(0,0,0,0.4);
+    border-radius: 5px;
+  }
+
+img {
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+    width: 20%;
+  }
+
+.personal {
+    top: 15%;
     position: absolute;
-    font-size: 40px;
-    padding: 5px 5px;
+    max-width: 810px;
+    left: 23%;
 }
 
-.navbrand {
-    line-height: 20px;
-    display: flex;
-    flex-direction: column;
-    text-align: end;
-    text-decoration: none;
-    font-size: 1.2rem;
-    color: #fff;
-    position: relative;
-    top: 35px;
+.professional {
+    top: 15%;
+    position: absolute;
+    right: 20%;
 }
 
-.taught {
-    text-decoration: underline;
-    flex-wrap: wrap;
-    display: flex;
-    flex-direction: row;
-    padding: 0;
-    margin: 0;
-    line-height: 40px;
-    margin-left: 50px;
-}
-
-.each {
-    margin: 20px;
-} 
-
-@media (max-width: 560px) {
+@media (max-width: 1500px) {
+    .header {
+        height: 300px;
+    }
     img {
-        width: 50%;
+        width: 20%;
     }
-    .navbrand {
-        font-size: 0.9rem;
+    .professional {
+        top: 10%;
+        font-size: 17px;
+        line-height: 30px;
+        left: 68%;
     }
-    #brand {
-        font-size: 25px;
+    .personal {
+        top: 10%;
+        font-size: 17px;
+        line-height: 30px;
+        max-width: 5000px;
     }
 }
+
+  @media (max-width: 1024px) {
+    .navbrand {
+        top: 1%;
+        font-size: 10px;
+    }
+    .navs {
+        height: 60px;
+    }
+    .header {
+        height: 300px;
+    }
+    img {
+        width: 20%;
+    }
+    .professional {
+        top: 10%;
+        font-size: 14px;
+        line-height: 20px;
+        max-width: 8000px;
+        left: 68%;
+    }
+    .personal {
+        top: 10%;
+        font-size: 14px;
+        line-height: 20px;
+        max-width: 450px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .navbrand {
+        top: 1%;
+        font-size: 10px;
+    }
+    .navs {
+        height: 60px;
+    }
+    .header {
+        height: 250px;
+    }
+    img {
+        width: 20%;
+    }
+    .professional {
+        top: 10%;
+        font-size: 12px;
+        line-height: 15px;
+        left: 71%;
+    }
+    .personal {
+        top: 10%;
+        font-size: 12px;
+        line-height: 15px;
+        max-width: 300px;
+        left: 25%;
+    }
+}
+
+
+

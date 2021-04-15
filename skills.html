@@ -8,73 +8,154 @@
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
     <!-- <link rel="stylesheet" href="style.css"> -->
     <style>
-    body {
-      background-color: #000;
-      line-height: 30px;
+   body {
+    background-color: rgb(201, 201, 201);
+    line-height: 30px;
+    list-style-type: none;
+    font-size: 18px;
+    margin: 50px;
+}  
+
+  .container {
+      background-color: #8B8982;
+}
+
+  .navs {
+      background-color: #373F47;
+      padding: 1px;
+      height: 100px;
+}
+
+  ul li {
       list-style-type: none;
-      font-size: 18px;
-      margin: 50px;
+}
+
+  #brand {
+      text-decoration: none;
+      color: #fff;
+      position: absolute;
+      font-size: 40px;
+      padding: 5px 5px;
+}
+
+  .navbrand {
+      line-height: 20px;
+      display: flex;
+      flex-direction: column;
+      text-align: end;
+      font-size: 1.2rem;
+      color: #fff;
+      position: relative;
+      top: 35px;
+}
+
+header {
+    height: 400px;
+    box-shadow: 3px 10px 10px rgba(0,0,0,0.4);
+    border-radius: 5px;
+  }
+
+img {
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+    width: 20%;
+  }
+
+.personal {
+    top: 15%;
+    position: absolute;
+    max-width: 810px;
+    left: 23%;
+}
+
+.professional {
+    top: 15%;
+    position: absolute;
+    right: 20%;
+}
+
+@media (max-width: 1500px) {
+    .header {
+        height: 300px;
     }
-
-    .container {
-        background-color: #8B8982;
-    }
-
-    .navs {
-        background-color: #373F47;
-        padding: 1px;
-        height: 100px;
-    }
-
-    ul li {
-        list-style-type: none;
-    }
-
-    #brand {
-        text-decoration: none;
-        color: #fff;
-        position: absolute;
-        font-size: 40px;
-        padding: 5px 5px;
-    }
-
-    .navbrand {
-        line-height: 20px;
-        display: flex;
-        flex-direction: column;
-        text-align: end;
-        font-size: 1.2rem;
-        color: #fff;
-        position: relative;
-        top: 35px;
-    }
-
-    .taught {
-        text-decoration: underline;
-        flex-wrap: wrap;
-        display: flex;
-        flex-direction: row;
-        padding: 0;
-        margin: 0;
-        line-height: 40px;
-        margin-left: 50px;
-    }
-
-    .each {
-        margin: 20px;
-    } 
-
-    @media (max-width: 560px) {
     img {
-        width: 50%;
+        width: 20%;
     }
-    .navbrand {
-        font-size: 0.9rem;
+    .professional {
+        top: 10%;
+        font-size: 17px;
+        line-height: 30px;
+        left: 68%;
     }
-    #brand {
-        font-size: 25px;
+    .personal {
+        top: 10%;
+        font-size: 17px;
+        line-height: 30px;
+        max-width: 5000px;
     }
 }
+
+  @media (max-width: 1024px) {
+    .navbrand {
+        top: 1%;
+        font-size: 10px;
+    }
+    .navs {
+        height: 60px;
+    }
+    .header {
+        height: 300px;
+    }
+    img {
+        width: 20%;
+    }
+    .professional {
+        top: 10%;
+        font-size: 14px;
+        line-height: 20px;
+        max-width: 8000px;
+        left: 68%;
+    }
+    .personal {
+        top: 10%;
+        font-size: 14px;
+        line-height: 20px;
+        max-width: 450px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .navbrand {
+        top: 1%;
+        font-size: 10px;
+    }
+    .navs {
+        height: 60px;
+    }
+    .header {
+        height: 250px;
+    }
+    img {
+        width: 20%;
+    }
+    .professional {
+        top: 10%;
+        font-size: 12px;
+        line-height: 15px;
+        left: 71%;
+    }
+    .personal {
+        top: 10%;
+        font-size: 12px;
+        line-height: 15px;
+        max-width: 300px;
+        left: 25%;
+    }
+}
+
+
+
+
     </style>
 </head>
 <body>
@@ -91,26 +172,25 @@
       <img class="img" src="https://avatars.githubusercontent.com/u/82051093?v=4" alt="">
 
       <div class="skills">  
-        <h3><strong>Minhas habilidades pessoais:</strong></h3>
-        <ul>
-          <li>1- Flexibilidade. Tenho atitude para lidar com imprevistos.</li>
-          <li>2- Parseverante. Não desisto até encontrar alguma resolução.</li>
-          <li>3- Trabalho em Equipe. Gosto de colaborar com outras pessoas.</li>
-          <li>4- Criativo. Pensar em formas alternativas para resolver contratempos.</li>
-          <li>5- Entusiasmado. Muito animado para/com assuntos que me interessam.</li>
-          <li>6- Determinado. Vou atrás dos meus objetios, não espero que eles "caem do céu".</li>
-        </ul>
-        <h3>Habilidades profissionais:</h3>
-          <ul>
-            <li>1- Git</li>
-            <li>2- Bash</li>
-            <li>3- Unix</li>
-            <li>4- HTML</li>
-            <li>5- CSS</li>
-            <li>6- JavaScript</li>
-          </ul>
+        <div class="personal">
+          <h3><strong>Minhas habilidades pessoais:</strong></h3>
+            <li>1- Flexibilidade. Tenho atitude para lidar com imprevistos.</li>
+            <li>2- Parseverante. Não desisto até encontrar alguma resolução.</li>
+            <li>3- Trabalho em Equipe. Gosto de colaborar com outras pessoas.</li>
+            <li>4- Criativo. Pensar em formas alternativas para resolver contratempos.</li>
+            <li>5- Entusiasmado. Muito animado para/com assuntos que me interessam.</li>
+            <li>6- Determinado. Vou atrás dos meus objetios, não espero que eles "caem do céu".</li>
+        </div>
+        <div class="professional">  
+          <h3>Habilidades profissionais:</h3>
+              <li>1- Git</li>
+              <li>2- Bash</li>
+              <li>3- Unix</li>
+              <li>4- HTML</li>
+              <li>5- CSS</li>
+              <li>6- JavaScript</li>
+        </div>    
       </div> 
-      <hr>
     </header> 
   </div>
 

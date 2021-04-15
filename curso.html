@@ -8,73 +8,197 @@
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
     <!-- <link rel="stylesheet" href="style.css"> -->
     <style>
-    body {
-      background-color: #000;
-      line-height: 30px;
+ body {
+    background-color: rgb(201, 201, 201);
+    line-height: 30px;
+    list-style-type: none;
+    font-size: 18px;
+    margin: 50px;
+}  
+
+  .container {
+      background-color: #8B8982;
+}
+
+  .navs {
+      background-color: #373F47;
+      padding: 1px;
+      height: 100px;
+}
+
+  ul li {
       list-style-type: none;
-      font-size: 18px;
-      margin: 50px;
-    }  
+}
 
-    .container {
-        background-color: #8B8982;
+  #brand {
+      text-decoration: none;
+      color: #fff;
+      position: absolute;
+      font-size: 40px;
+      padding: 5px 5px;
+}
+
+  .navbrand {
+      line-height: 20px;
+      display: flex;
+      flex-direction: column;
+      text-align: end;
+      font-size: 1.2rem;
+      color: #fff;
+      position: relative;
+      top: 35px;
+}
+
+header {
+    height: 550px;
+    box-shadow: 3px 10px 10px rgba(0,0,0,0.4);
+    border-radius: 5px;
+  }
+
+img {
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+    width: 20%;
+  }
+
+  .course {
+    top: 15%;
+    position: absolute;
+    max-width: 900px;
+    left: 25%;
+    display: wrap;
+    flex-wrap: wrap;
+  }
+
+  .taught {
+      display: flex;
+      flex-wrap: wrap;
+      text-decoration: underline;
+  }
+
+  .each {
+      color: #fff;
+      position: relative;
+      left: 0;
+      margin: 30px;
+      
+} 
+
+@media (max-width: 1700px) {
+    .header {
+        height: 500px;
     }
-
-    .navs {
-        background-color: #373F47;
-        padding: 1px;
-        height: 100px;
-    }
-
-    ul li {
-        list-style-type: none;
-    }
-
-    #brand {
-        text-decoration: none;
-        color: #fff;
-        position: absolute;
-        font-size: 40px;
-        padding: 5px 5px;
-    }
-
-    .navbrand {
-        line-height: 20px;
-        display: flex;
-        flex-direction: column;
-        text-align: end;
-        font-size: 1.2rem;
-        color: #fff;
-        position: relative;
-        top: 35px;
-    }
-
-    .taught {
-        text-decoration: underline;
-        flex-wrap: wrap;
-        display: flex;
-        flex-direction: row;
-        padding: 0;
-        margin: 0;
-        line-height: 40px;
-        margin-left: 50px;
-    }
-
-    .each {
-        margin: 20px;
-    } 
-
-    @media (max-width: 560px) {
     img {
-        width: 50%;
+        width: 20%;
     }
-    .navbrand {
-        font-size: 0.9rem;
+    .course {
+        top: 10%;
+        font-size: 20px;
+        line-height: 20px;
+        max-width: 1000px;
     }
-    #brand {
-        font-size: 25px;
+    .taught {
+        position: relative;
+        top: 10%;
+    }
+    .each {
+        margin: 15px;
+        font-size: 20px;
     }
 }
+
+@media (max-width: 1406px) {
+    .navbrand {
+        top: 8%;
+        font-size: 16px;
+    }
+    .navs {
+        height: 70px;
+    }
+    .header {
+        height: 450px;
+    }
+    img {
+        width: 20%;
+    }
+    .course {
+        top: 7%;
+        font-size: 16px;
+        line-height: 20px;
+        max-width: 750px;
+    }
+    .taught {
+        position: relative;
+        top: 12%;
+    }
+    .each {
+        margin: 13px;
+        font-size: 16px;
+    }
+}
+
+  @media (max-width: 1024px) {
+    .navbrand {
+        top: 1%;
+        font-size: 10px;
+    }
+    .navs {
+        height: 60px;
+    }
+    .header {
+        height: 400px;
+    }
+    img {
+        width: 20%;
+    }
+    .course {
+        top: 10%;
+        font-size: 15px;
+        line-height: 20px;
+        max-width: 710px;
+    }
+    .taught {
+        position: relative;
+        top: 17%;
+    }
+    .each {
+        margin: 10px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .navbrand {
+        top: 1%;
+        font-size: 10px;
+    }
+    .navs {
+        height: 60px;
+    }
+    .header {
+        height: 350px;
+    }
+    img {
+        width: 20%;
+    }
+    .course {
+        top: 10%;
+        font-size: 13px;
+        line-height: 16px;
+        max-width: 500px;
+    }
+    .taught {
+        position: relative;
+        top: 26%;
+    }
+    .each {
+        font-size: 14px;
+        margin: 6px;
+    }
+}
+
+
+
+
     </style>
 </head>
 <body>
@@ -93,12 +217,12 @@
       <div class="course">
         <h1>Onde estou estudando:</h1>
         <h2>-Trybe</h2>
-        <hr>
-        <p>Em 2019, Matheus criou a Trybe, uma escola de programação na qual os alunos só pagam depois de arrumar emprego. Já são 700 estudantes matriculados, e a Trybe atraiu fundos que investiram US$ 15,7 milhões na startup.
+
+        <p>Em 2019, Matheus criou a Trybe, uma escola de programação na qual os alunos só pagam depois de arrumar emprego. Já são mais de 700 estudantes matriculados, e a Trybe atraiu fundos que investiram US$ 15,7 milhões na startup.
          <!-- Leia mais em: https://vocesa.abril.com.br/empreendedorismo/na-trybe-escola-de-programacao-o-aluno-so-paga-quando-estiver-empregado/ --> </p>
         <p>A Trybe oferece uma formação de alta qualidade, alinhada com as necessidades do mercado. Para montar a grade curricular do curso, foi conversado com mais de 50 empresas. Os alunos recebem 1.500 horas de formação ao longo de um ano e, além da parte técnica, desenvolve-se soft skills [como relações interpessoais].</p>
         <p>Habilidades que o aluno tem ao término do curso são diversar, tendo como exemplo:</p>
-          <ul class="taught">
+          <!-- <ul class="taught">
             <li class="each">1- JavaScript</li>
             <li class="each">2- HTML</li>
             <li class="each">3- Python</li>
@@ -111,8 +235,22 @@
             <li class="each">10- CSS</li>
             <li class="each">11- ORM</li>
             <li class="each">12- NoSQL</li>
-          </ul>
+          </ul> -->
       </div>
+      <ul class="taught">
+        <li class="each">1- JavaScript</li>
+        <li class="each">2- HTML</li>
+        <li class="each">3- Python</li>
+        <li class="each">4- SQL</li>
+        <li class="each">5- React</li>
+        <li class="each">6- Algoritmos e estrutura de dados</li>
+        <li class="each">7- Node.js</li>
+        <li class="each">8- Git</li>
+        <li class="each">9- Express.js</li>
+        <li class="each">10- CSS</li>
+        <li class="each">11- ORM</li>
+        <li class="each">12- NoSQL</li>
+      </ul>
     </header>
   </div>  
 

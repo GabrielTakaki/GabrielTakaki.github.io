@@ -8,73 +8,153 @@
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
     <!-- <link rel="stylesheet" href="style.css"> -->
     <style>
-    body {
-      background-color: #000;
-      line-height: 30px;
-      list-style-type: none;
-      font-size: 18px;
-      margin: 50px;
-    }
+body {
+  line-height: 30px;
+  list-style-type: none;
+  font-size: 18px;
+  margin: 50px;
+  background-color: rgb(201, 201, 201);
+}
 
-    .container {
-        background-color: #8B8982;
-    }
+.container {
+  background-color: #8B8982;
+}
 
-    .navs {
-        background-color: #373F47;
-        padding: 1px;
-        height: 100px;
-    }
+.navs {
+  background-color: #373F47;
+  padding: 1px;
+  height: 100px;
+}
 
-    ul li {
-        list-style-type: none;
-    }
+ul li {
+  list-style-type: none;
+}
 
-    #brand {
-        color: #fff;
-        text-decoration: none;
-        position: absolute;
-        font-size: 40px;
-        padding: 5px 5px;
-    }
+#brand {
+  color: #fff;
+  position: absolute;
+  font-size: 40px;
+  padding: 5px 5px;
+  text-decoration: none;
+}
 
-    .navbrand {
-        line-height: 20px;
-        display: flex;
-        flex-direction: column;
-        text-align: end;
-        font-size: 1.2rem;
-        color: #fff;
-        position: relative;
-        top: 35px;
-    }
+.navbrand {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #fff;
+  position: relative;
+  top: 35px;
+  line-height: 20px;
+}
 
-    .taught {
-        text-decoration: underline;
-        flex-wrap: wrap;
-        display: flex;
-        flex-direction: row;
-        padding: 0;
-        margin: 0;
-        line-height: 40px;
-        margin-left: 50px;
-    }
+header {
+  height: 900px;
+  box-shadow: 3px 10px 10px rgba(0,0,0,0.4);
+}
 
-    .each {
-        margin: 20px;
-    } 
+hr {
+  top: 200px;
+  position: relative;
+}
 
-    @media (max-width: 560px) {
-    img {
-        width: 50%;
+img {
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+  width: 20%;
+}
+
+.me {
+  top: 15%;
+  position: absolute;
+  max-width: 810px;
+  left: 25%;
+}
+
+.passatempo {
+  padding: 30px 30px;
+  top: 22%;
+  position: relative;
+}
+
+@media (max-width: 1145px) {
+  .me {
+    max-width: 500px;
+    font-size: 15px;
+    top: 12%;
+    line-height: 30px;
+  }
+  .header {
+    height: 700px;
+  }
+  hr {
+    top: 26%;
+  }
+}
+
+
+@media (max-width: 866px) {
+    .me {
+        max-width: 500px;
+        line-height: 30px;
+        font-size: 15px;
+        top: 13%;
     }
-    .navbrand {
-        font-size: 0.9rem;
+    .header {
+        height: 700px;
     }
-    #brand {
-        font-size: 25px;
+    hr {
+        top: 30%;
+    }
+    .passatempo {
+        top: 30%;
     }
 }
+
+
+@media (max-width: 737px) {
+    .navbrand {
+        top: 1%;
+        font-size: 10px;
+    }
+    
+    .navs {
+        height: 60px;
+    }
+    
+    .me {
+        top: 8%;
+        max-width: 400px;
+        line-height: 20px;
+        font-size: 15px;
+    }
+    .header {
+        height: 700px;
+    }
+    hr {
+        top: 28%;
+    }
+}
+
+@media (max-width: 596px) {
+    .me {
+        top: 11%;
+        max-width: 300px;
+        line-height: 20px;
+        font-size: 15px;
+    }
+    .header {
+        height: 750px;
+    }
+    hr {
+        top: 300px;
+    }
+    .passatempo {
+        top: 36%;
+    }
+}
+
     </style>
 </head>
 <body>
@@ -107,7 +187,7 @@
             <li>De Surf: <a href="https://www.worldsurfleague.com/" target="_blank">Clique Aqui!</a></li>
         </div>  
 
-        <hr>
+        
 
 
 
