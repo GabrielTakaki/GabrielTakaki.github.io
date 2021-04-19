@@ -1,0 +1,149 @@
+body {
+    background-color: rgb(201, 201, 201);
+    line-height: 30px;
+    list-style-type: none;
+    font-size: 18px;
+    margin: 50px;
+}  
+
+.container {
+    background-color: #8B8982;
+    border: 1px solid #fff;
+  }
+  
+  .navs {
+    background-color: #373F47;
+    padding: 1px;
+    border: 1px solid #fff;
+  }
+  
+
+  ul li {
+      list-style-type: none;
+}
+
+#brand {
+  color: #fff;
+  position: absolute;
+  font-size: 40px;
+  padding: 0px 5px;
+  text-decoration: none;
+  margin-top: -20px;
+}
+
+.navbrand {
+  color: #fff;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 15px 5px;
+  line-height: 2px;
+  font-size: 16px;
+}
+
+header {
+    height: 400px;
+    box-shadow: 3px 10px 10px rgba(0,0,0,0.4);
+    border-radius: 5px;
+  }
+
+img {
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+    width: 20%;
+    border-radius: 50%;
+  }
+
+.personal {
+    top: 15%;
+    position: absolute;
+    width: 45%;
+    left: 23%;
+}
+
+.professional {
+    top: 15%;
+    position: absolute;
+    right: 10%;
+    padding: 0 10px;
+}
+
+/* @media (max-width: 1500px) {
+    .header {
+        height: 300px;
+    }
+    img {
+        width: 20%;
+    }
+    .professional {
+        top: 10%;
+        font-size: 17px;
+        line-height: 30px;
+        left: 68%;
+    }
+    .personal {
+        top: 10%;
+        font-size: 17px;
+        line-height: 30px;
+        max-width: 5000px;
+    }
+}
+
+  @media (max-width: 1024px) {
+    .navbrand {
+        top: 1%;
+        font-size: 10px;
+    }
+    .navs {
+        height: 60px;
+    }
+    .header {
+        height: 300px;
+    }
+    img {
+        width: 20%;
+    }
+    .professional {
+        top: 10%;
+        font-size: 14px;
+        line-height: 20px;
+        max-width: 8000px;
+        left: 68%;
+    }
+    .personal {
+        top: 10%;
+        font-size: 14px;
+        line-height: 20px;
+        max-width: 450px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .navbrand {
+        top: 1%;
+        font-size: 10px;
+    }
+    .navs {
+        height: 60px;
+    }
+    .header {
+        height: 250px;
+    }
+    img {
+        width: 20%;
+    }
+    .professional {
+        top: 10%;
+        font-size: 12px;
+        line-height: 15px;
+        left: 71%;
+    }
+    .personal {
+        top: 10%;
+        font-size: 12px;
+        line-height: 15px;
+        max-width: 300px;
+        left: 25%;
+    }
+} */

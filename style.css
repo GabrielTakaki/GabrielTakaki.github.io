@@ -1,147 +1,160 @@
 body {
-    background-color: rgb(201, 201, 201);
     line-height: 30px;
     list-style-type: none;
-    font-size: 18px;
+    font-size: 25px;
     margin: 50px;
-}  
-
+    background-color: rgb(201, 201, 201);
+  }
+  
   .container {
-      background-color: #8B8982;
-}
-
+    background-color: #8B8982;
+    border: 1px solid #fff;
+  }
+  
   .navs {
-      background-color: #373F47;
-      padding: 1px;
-      height: 100px;
-}
-
+    background-color: #373F47;
+    padding: 1px;
+    border: 1px solid #fff;
+  }
+  
   ul li {
-      list-style-type: none;
-}
-
+    list-style-type: none;
+  }
+  
   #brand {
-      text-decoration: none;
-      color: #fff;
-      position: absolute;
-      font-size: 40px;
-      padding: 5px 5px;
-}
-
+    color: #fff;
+    position: absolute;
+    font-size: 40px;
+    padding: 0px 5px;
+    text-decoration: none;
+    margin-top: -30px;
+  }
+  
   .navbrand {
-      line-height: 20px;
-      display: flex;
-      flex-direction: column;
-      text-align: end;
-      font-size: 1.2rem;
-      color: #fff;
-      position: relative;
-      top: 35px;
-}
-
-header {
-    height: 400px;
-    box-shadow: 3px 10px 10px rgba(0,0,0,0.4);
-    border-radius: 5px;
+    color: #fff;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 15px 5px;
+    line-height: 2px;
+    font-size: 16px;
   }
-
-img {
-    box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+  
+  header {
+    height: 700px;
+    box-shadow: 3px 10px 10px rgba(0,0,0,0.6);
+  }
+  
+  .name {
+    font-size: 30px;
+    text-decoration: underline;
+  }
+  
+  .name:hover {
+    transform: scale(0.98);
+    cursor: default;
+  }
+  
+  
+  img {
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.6);
     width: 20%;
+    border-radius: 50%;
   }
-
-.personal {
+  
+  .me {
     top: 15%;
     position: absolute;
-    max-width: 810px;
-    left: 23%;
-}
-
-.professional {
-    top: 15%;
+    width: 70%;
+    left: 25%;
+    overflow: auto;
+  }
+  
+  .passatempo {
+    bottom: 15%;
     position: absolute;
-    right: 20%;
-}
-
-@media (max-width: 1500px) {
+    max-width: 80vw;
+  }
+  
+  li a {
+    color: #fff;
+  }
+  
+  /* @media (max-width: 1145px) {
     .header {
-        height: 300px;
+      height: 700px;
     }
-    img {
-        width: 20%;
-    }
-    .professional {
-        top: 10%;
-        font-size: 17px;
-        line-height: 30px;
-        left: 68%;
-    }
-    .personal {
-        top: 10%;
-        font-size: 17px;
-        line-height: 30px;
-        max-width: 5000px;
-    }
-}
-
-  @media (max-width: 1024px) {
+    .me {
+      font-size: 16px;
+    }  
+  }
+  
+  
+  @media (max-width: 866px) {
+      .me {
+          max-width: 500px;
+          line-height: 30px;
+          font-size: 15px;
+          top: 13%;
+      }
+      .header {
+          height: 700px;
+      }
+      hr {
+          top: 30%;
+      }
+      .passatempo {
+          top: 30%;
+      }
+  }
+  
+  
+  @media (max-width: 737px) {
+      .me {
+          top: 15%;
+          max-width: 400px;
+          line-height: 20px;
+          font-size: 15px;
+      }
+      .header {
+          height: 750px;
+      }
+      hr {
+          top: 35%;
+      }
+  }
+  
+  @media (max-width: 596px) {
     .navbrand {
-        top: 1%;
-        font-size: 10px;
-    }
+      top: 1%;
+      font-size: 10px;      
+      padding: 5px 5px;
+      }
+      
     .navs {
-        height: 60px;
+      height: 60px;
+    }  
+  
+    .name {
+      font-size: 27px;
+    }
+  
+    .me {      
+      top: 10%;
+      max-width: 300px;
+      line-height: 20px;
+      font-size: 15px;
+      left: 27%;
     }
     .header {
-        height: 300px;
+      height: 750px;
     }
-    img {
-        width: 20%;
+    hr {
+      top: 300px;
     }
-    .professional {
-        top: 10%;
-        font-size: 14px;
-        line-height: 20px;
-        max-width: 8000px;
-        left: 68%;
+    .passatempo {
+      top: 36%;
     }
-    .personal {
-        top: 10%;
-        font-size: 14px;
-        line-height: 20px;
-        max-width: 450px;
-    }
-}
-
-
-@media (max-width: 768px) {
-    .navbrand {
-        top: 1%;
-        font-size: 10px;
-    }
-    .navs {
-        height: 60px;
-    }
-    .header {
-        height: 250px;
-    }
-    img {
-        width: 20%;
-    }
-    .professional {
-        top: 10%;
-        font-size: 12px;
-        line-height: 15px;
-        left: 71%;
-    }
-    .personal {
-        top: 10%;
-        font-size: 12px;
-        line-height: 15px;
-        max-width: 300px;
-        left: 25%;
-    }
-}
-
-
-
+  }
+ */

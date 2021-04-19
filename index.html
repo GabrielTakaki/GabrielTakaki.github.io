@@ -8,149 +8,89 @@
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
     <!-- <link rel="stylesheet" href="style.css"> -->
     <style>
-body {
-  line-height: 30px;
-  list-style-type: none;
-  font-size: 18px;
-  margin: 50px;
-  background-color: rgb(201, 201, 201);
-}
-
-.container {
-  background-color: #8B8982;
-}
-
-.navs {
-  background-color: #373F47;
-  padding: 1px;
-  height: 100px;
-}
-
-ul li {
-  list-style-type: none;
-}
-
-#brand {
-  color: #fff;
-  position: absolute;
-  font-size: 40px;
-  padding: 5px 5px;
-  text-decoration: none;
-}
-
-.navbrand {
-  display: flex;
-  flex-direction: column;
-  text-align: end;
-  font-size: 1.2rem;
-  color: #fff;
-  position: relative;
-  top: 35px;
-  line-height: 20px;
-}
-
-header {
-  height: 800px;
-  box-shadow: 3px 10px 10px rgba(0,0,0,0.4);
-}
-
-
-hr {
-  top: 25%;
-  position: relative;
-}
-
-img {
-  box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
-  width: 20%;
-  border-radius: 50%;
-}
-
-.me {
-  top: 15%;
-  position: absolute;
-  width: 70%;
-  left: 25%;
-  overflow: auto;
-}
-
-.passatempo {
-  padding: 30px 30px;
-  top: 22%;
-  position: relative;
-}
-
-@media (max-width: 1145px) {
-  .header {
-    height: 700px;
+      body {
+    line-height: 30px;
+    list-style-type: none;
+    font-size: 25px;
+    margin: 50px;
+    background-color: rgb(201, 201, 201);
   }
-  .me {
+  
+  .container {
+    background-color: #8B8982;
+    border: 1px solid #fff;
+  }
+  
+  .navs {
+    background-color: #373F47;
+    padding: 1px;
+    border: 1px solid #fff;
+  }
+  
+  ul li {
+    list-style-type: none;
+  }
+  
+  #brand {
+    color: #fff;
+    position: absolute;
+    font-size: 40px;
+    padding: 0px 5px;
+    text-decoration: none;
+    margin-top: -30px;
+  }
+  
+  .navbrand {
+    color: #fff;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 15px 5px;
+    line-height: 2px;
     font-size: 16px;
-  }  
-}
-
-
-@media (max-width: 866px) {
-    .me {
-        max-width: 500px;
-        line-height: 30px;
-        font-size: 15px;
-        top: 13%;
-    }
-    .header {
-        height: 600px;
-    }
-    hr {
-        top: 30%;
-    }
-    .passatempo {
-        top: 30%;
-    }
-}
-
-
-@media (max-width: 737px) {
-    .navbrand {
-        top: 1%;
-        font-size: 10px;
-    }
-    
-    .navs {
-        height: 60px;
-    }
-    
-    .me {
-        top: 8%;
-        max-width: 400px;
-        line-height: 20px;
-        font-size: 15px;
-    }
-    .header {
-        height: 600px;
-    }
-    hr {
-        top: 35%;
-    }
-}
-
-@media (max-width: 596px) {
-    .me {
-        top: 11%;
-        max-width: 300px;
-        line-height: 20px;
-        font-size: 15px;
-    }
-    .header {
-        height: 750px;
-    }
-    hr {
-        top: 300px;
-    }
-    .passatempo {
-        top: 36%;
-    }
-}
-
+  }
+  
+  header {
+    height: 700px;
+    box-shadow: 3px 10px 10px rgba(0,0,0,0.6);
+  }
+  
+  .name {
+    font-size: 30px;
+    text-decoration: underline;
+  }
+  
+  .name:hover {
+    transform: scale(0.98);
+    cursor: default;
+  }
+  
+  
+  img {
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.6);
+    width: 20%;
+    border-radius: 50%;
+  }
+  
+  .me {
+    top: 15%;
+    position: absolute;
+    width: 70%;
+    left: 25%;
+    overflow: auto;
+  }
+  
+  .passatempo {
+    bottom: 15%;
+    position: absolute;
+    max-width: 80vw;
+  }
+  
+  li a {
+    color: #fff;
+  }
+  
     </style>
 </head>
 <body>
@@ -167,14 +107,13 @@ img {
       <img class="img" src="https://avatars.githubusercontent.com/u/82051093?v=4" alt="">
 
         <div class="me">
-            <h2>Oi, meu nome é <strong>Gabriel Takaki Junkes.</strong></h2> 
+            <h2>Oi, meu nome é <strong class="name">Gabriel Takaki Junkes.</strong></h2> 
             <i>
             <p>Nesta foto, eu estava com a minha família em um restaurante da cidade da qual eu me encontro, que é  Balneário Camboriú, localizada em Santa Catarina, Brasil.</p>
             <p>Conheci a programação há alguns meses atrás, e me identifiquei imediatamente. Desde criança sou facinado por tecnologia, e me perguntava como que os jogos, aplicativos e sites que eu vistava eram feitos. E a resposta é que a programação está por trás de quase tudo! e hoje, tendo 18 anos, procuro ter muito sucesso nessa minha nova caminhada!</p> <p>Pelo fato de poder facilitar e ajudar muitas pessoas ao mesmo tempo, por meio da programação me chama muita atenção também.</p> 
             </i>  
         </div>   
 
-        <hr>
 
         <div class="passatempo">  
             <h3><strong>Blogs e interesses:</strong></h3>
